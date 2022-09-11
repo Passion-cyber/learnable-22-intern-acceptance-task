@@ -75,7 +75,7 @@ svg {
 header .header__text-box .heading-primary {
   text-align: center;
   padding: 2rem;
-  color: #F2B23F;
+  color: #d8900b;
   font-size: 35px;
   letter-spacing: 5px;
 }
@@ -213,7 +213,7 @@ input {
 
   75% {
     top: 0px;
-    left: 40px;
+    left: 20px;
    
   }
 
