@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <section class="container">
+        <div class="header__logo-box">
+          <img src="images/Flixia logo.PNG" alt="Logo" class="header__logo" />
+          <svg id="hambuger" viewBox="0 0 100 80" width="40" height="15">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="25"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+          <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="header__text-box">
+          <h1 class="heading-primary">
+            Stream Unlimited movies, TV shows and more
+          </h1>
+          <div class="animate">
+            <h2 class="heading-primary-sub">
+              <a class="button primary-button" href="#">Watch Now</a>
+            </h2>
+          </div>
+        </div>
+
+        <div class="sub-header grid">
+          <div class="header-left">
+            <h3>Catch all the action and intruiging moments with Flixia</h3>
+            <img src="./images/ipad.jpg" alt="pc" />
+          </div>
+          <div class="header-right my-form">
+            <form id="my-form-group">
+              <div class="inputBox">
+                <label for="userName">Username</label>
+                <input
+                  type="text"
+                  name="userName"
+                  id="userName"
+                  placeholder="Enter Username"
+                  required
+                />
+              </div>
+              <div class="inputBox">
+                <label for="userPassword">Password</label>
+                <input
+                  type="password"
+                  name="userPassword"
+                  id="userPassword"
+                  placeholder="Enter Password"
+                  required
+                />
+              </div>
+              <div>
+                <button class="primary-button button-secondary" href="#">
+                  Sign In
+                </button>
+                <p>
+                  <a class="recovery" href="#">Dont have an account?</a>
+                  <span><a class="btn" href="#">Sign Up</a></span>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>
