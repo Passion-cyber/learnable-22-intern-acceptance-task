@@ -4,81 +4,282 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
+    <title>FrontEnd Task</title>
   </head>
-
   <body>
-    <header class="header">
-      <section class="container">
-        <div class="header__logo-box">
-          <img src="images/Flixia logo.PNG" alt="Logo" class="header__logo" />
-          <svg id="hambuger" viewBox="0 0 100 80" width="40" height="15">
-            <rect width="100" height="20"></rect>
-            <rect y="30" width="100" height="25"></rect>
-            <rect y="60" width="100" height="20"></rect>
-          </svg>
-          <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="./Flixia logo.PNG" alt="logo" />
         </div>
-
-        <div class="header__text-box">
-          <h1 class="heading-primary">
-            Stream Unlimited movies, TV shows and more
+        <ul>
+          <li><a href="#" class="primary-btn">Featured</a></li>
+          <li><a href="#">Most Watched</a></li>
+          <li><a href="#">Top Categories</a></li>
+          <li><a href="#">All Categories</a></li>
+          <li><a href="#">Pricing </a></li>
+          <li><a href="index.html">Sign In</a></li>
+          <li><a href="signup.html" class="secondary-btn">Sign Up</a></li>
+        </ul>
+      </nav>
+      <section class="hero-section">
+        <div class="hero-image">
+       </div>
+        <div class="sub-herosection">
+          <p class="sub-herosection-text">Coming Soon...</p>
+          <h1 class="hero-title">
+            mancing mania <span class="span">the movie</span>
           </h1>
-          <div class="animate">
-            <h2 class="heading-primary-sub">
-              <a class="button primary-button" href="#">Watch Now</a>
-            </h2>
-          </div>
-        </div>
-
-        <div class="sub-header grid">
-          <div class="header-left">
-            <h3>Catch all the action and intruiging moments with Flixia</h3>
-            <img src="./images/ipad.jpg" alt="pc" />
-          </div>
-          <div class="header-right my-form">
-            <form id="my-form-group">
-              <div class="inputBox">
-                <label for="userName">Username</label>
-                <input
-                  type="text"
-                  name="userName"
-                  id="userName"
-                  placeholder="Enter Username"
-                  required
-                />
-              </div>
-              <div class="inputBox">
-                <label for="userPassword">Password</label>
-                <input
-                  type="password"
-                  name="userPassword"
-                  id="userPassword"
-                  placeholder="Enter Password"
-                  required
-                />
-              </div>
-              <div>
-                <button class="primary-button button-secondary" href="#">
-                  Sign In
-                </button>
-                <p>
-                  <a class="recovery" href="#">Dont have an account?</a>
-                  <span><a class="btn" href="#">Sign Up</a></span>
-                </p>
-              </div>
-            </form>
-          </div>
+          <p class="sub-herosection-text1">On the air, 01: 11: 40</p>
         </div>
       </section>
     </header>
+    <section>
+      <div class="container">
+        <div class="wrapper">
+          <div class="wrapper-left">
+            <p class="vivamus">Vivamus sit amet</p>
+            <h2 class="wrapper-text">
+              The lorem ipsum dolor set amet
+            </h2>
+            <div class="wrapper-image">
+              <img src="./starrate.PNG" alt=""> <Span>5.0   | 2h 32m</Span>
+            </div>
+            <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex officiis eveniet voluptates.</p>
+            <div class="wrapper-buttons">
+              <a href="#" class="secondary-btn button">watch trailer </a>
+              <a href="#" class="primary-btn btn">watch full movie</a>
+            </div>
+          </div>
+          <div class="wrap-right">
+            <img src="./Capture.PNG" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="container">
+        <div class="grid-item">
+          <div class="individual-item1">
+            <h3 class="grid-item-text"> Featured</h3>
+            <h3 class="grid-item-para">movies</h3>
+            <p class="grid-item-phrase">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda.</p>
+          </div>
+          <div class="individual-item2">
+           <img src="./movie4.PNG" alt="">
+            <p class="grid-item-caption">SPIDER MAN</p>
+          </div>
+          <div class="individual-item3">
+            <img src="./movie2.PNG" alt="">
+             <p class="grid-item-caption">THE GATE</p>
+           </div>
+           <div class="individual-item4">
+            <img src="./movie3.PNG" alt="">
+             <p class="grid-item-caption">VIKRAM VEDHA</p>
+           </div>
+          </div>          
+        </div>
+    </section>
+    <section id="card" data-aos= "fade-up">
+        <h4>Most Watched</h4>
+        <div class="container-card ">        
+          <div class="individual-cards ">
+            <img src="./fastandfurious.jpg" class="fixed-width" alt="">
+          </div>
+          <div class="individual-cards">
+            <img src="./starwars.jpeg" alt="">
+          </div>
+          <div class="individual-cards ">
+            <img src="./armyaction.jpg" class="fixed-width" alt="">
+          </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- <section id="grid-span">
+      <div class="grid-span-wrapper">
+        <div class="grid-column1">
+          <h4>Top <span class="grid-column-text">Categories</span></h4>
+        </div>
+        <div class="grid-column2">
+         <img src="./column2.PNG" alt="">
+        </div>
+        <div class="grid-column3">
+          <img src="./column3.PNG" alt="">
+         </div>
+         <div class="grid-column4">
+          <img src="./spancolumn7img.jpg" alt="">
+         </div>
+         <div class="grid-column5">
+          <img src="./movie1.PNG" alt="">
+         </div>
+         <div class="grid-column6">
+          <img src="./spancolumn6img.jpg" alt="">
+         </div>
+         <div class="grid-column7">
+          <img src="./span7.jpg" alt="">
+         </div>
+      </div>
+    </section> -->
+        <section id="category" >
+      <h2 class="category-head-text">All</h2>
+      <h2 class="category-head-text1 active-category">Categories</h2>
+      <div class="category-wrapper">
+        <div class="icon-left">
+          <i class="fa-solid fa-4x fa-arrow-left-long"></i>
+        </div>
+        <div class="category-items">
+          <img src="./romance.jpg" alt="">
+          <p class="category-item-text">romance</p>
+        </div>
+        <div class="category-items">
+          <img src="./column4.PNG" alt="">
+          <p class="category-item-text">sci-fi</p>
+        </div>
+        <div class="category-items">
+          <img src="./comedy.jpg" alt="">
+          <p class="category-item-text">commedy</p>
+        </div>
+        <div class="category-items">
+          <img src="./heroesimg.jpg" alt="">
+          <p class="category-item-text">heroes
+
+          </p>
+        </div>
+        <div class="category-items">
+          <img src="./images.jpg" alt="">
+          <p class="category-item-text">action</p>
+        </div>
+        <div class="category-items">
+          <img src="./hollywood.jpg" alt="">
+          <p class="category-item-text">hollywood</p>
+        </div>
+        <div class="icon-right">
+          <i class="fa-solid fa-4x fa-arrow-right-long"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing section starts here -->
+    <section id="category">
+      <h2 class="category-head-text">Flexible</h2>
+      <h2 class="category-head-text1">Pricing and Plan</h2>
+      <div class="pricing-wrapper">
+        <div class="individual-pricing blue">
+          <ul>
+            <div class="hover-blue">
+            <li class="pricing">basic</li>
+            <li class="pricing-cost">free</li>
+          </div>
+        </ul>
+            <p class="pricing-detail">Lorem ipsum dolor sit amet, consectetur consectetur consectetur consectetur adipisicing elit. Dicta?</li>
+            <p class="pricing-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, molestias!</li>
+              <div class="pricing-btn">
+            <a href="#" class="secondary-btn"> choose plan</a>
+          </div>
+  
+        </div>
+        <div class="individual-pricing active-category">
+          <ul>
+            <li class="best-value">best value</li>
+            <li class="best-value-prize"><sup>$</sup>24</li>
+            <p class="pricing-detail">Lorem ipsum dolor sit amet, consectetur consectetur consectetur consectetur adipisicing elit. Dicta?</li>
+              <p class="pricing-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, molestias!</li>
+                <div class="pricing-btn">
+                  <a href="#" class="primary-btn"> choose plan</a>
+                </div>
+          </ul>
+        </div>
+        <div class="individual-pricing">
+          <ul>
+            <li class="best-value">pro</li>
+            <li class="best-value-prize"><sup>$</sup>54</li>
+            <p class="pricing-detail">Lorem ipsum dolor sit amet, consectetur consectetur consectetur consectetur adipisicing elit. Dicta?</li>
+              <p class="pricing-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, molestias!</li>
+                <div class="pricing-btn">
+                  <a href="#" class="primary-btn"> choose plan</a>
+                </div>
+          </ul>
+        </div>
+        <div class="individual-pricing">
+          <ul>
+            <li class="best-value">enterprise</li>
+            <li class="best-value-prize"><sup>$</sup>99</li>
+            <p class="pricing-detail">Lorem ipsum dolor sit amet, consectetur consectetur consectetur consectetur adipisicing elit. Dicta?</li>
+              <p class="pricing-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, molestias!</li>
+                <div class="pricing-btn">
+                  <a href="#" class="primary-btn"> choose plan</a>
+                </div>
+          </ul>
+        </div>
+      
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-category">
+        <div class="footer-category-inner">
+        <h2 class="category-head-text">what are you waiting for?</h2>
+          <div class="pricing-btn">
+            <a href="#" class="secondary-btn">get started</a>
+          </div>
+        </div>
+        <div class="footer-wrapper">
+          <div class="footer-logo">
+            <img src="./Flixia logo.PNG" alt="logo">
+            <h2 class="logo-description">your One Stop shop for movies</h2>
+            <p class="copywrite">&copy; Flixia Team 2022</p>
+          </div>
+          <div class="footer-company">
+            <h2 class="company-text">company</h2>
+            <ul>
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+            </ul>
+          </div>
+          <div class="footer-company">
+            <h2 class="company-text">services</h2>
+            <ul>
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+            </ul>
+          </div>
+          <div class="footer-company">
+            <h2 class="company-text">about us</h2>
+            <ul>
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+              <li><a href="#">Lorem, ipsum.</a></li>
+            </ul>
+          </div>
+          <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>   
+            
+            <div class="custom-select">
+              <select>
+                <option value="1">English - En</option>
+                <option value="2">Igbo</option>
+                <option value="3">Pigin</option>
+                <option value="4">Spanish</option>
+                <option value="5">French</option>
+                <option value="6">Spanish</option>
+              </select>
+            </div>
+                   
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>

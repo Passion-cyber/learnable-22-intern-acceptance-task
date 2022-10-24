@@ -1,0 +1,128 @@
+:root{
+    --blue-bg-color: rgb(48, 79, 254);
+    --body-bg-color: #eee;
+    --red-bg-color: #e91e63;
+    --gray-color: #444;
+    --white-color: #fff;
+    --black-color: #000;
+    --container: 2rem auto;
+  }
+
+body {
+    font-size: 10px;
+    line-height: 1.5em;
+    font-size: 10px;
+    background-color:var(--body-bg-color);
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+  }
+
+header {
+  background: url("./unsplash.jpg");
+  clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 71% 100%, 33% 100%, 0% 80%, 0 0);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+  z-index: 1;
+}
+
+section.form-container{
+  max-width: 90%;
+  width: 1440px;
+  margin: 8rem 0 0 0;
+  padding: 2rem 0;
+}
+
+section.form-container .sub-header{
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sub-header .header-left{
+  border-radius: 15px;
+  min-height: 500px;
+}
+
+.sub-header .header-left h3{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  color: var(--black-color)
+}
+
+.sub-header .header-left img{
+border-radius: inherit;
+}
+
+.sub-header .header-right{
+  /* border: 1px solid red; */
+  height: 500px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.inputBox label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  margin-top: .8rem;
+
+}
+
+input {
+  min-width: 400px;
+  border: none;
+  padding: 12px 20px;
+  margin: 20px 0;
+  border-bottom: 2px solid var(--blue-bg-color);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.input:focus{
+  outline: none;
+  border: none;
+}
+
+.bg-button{
+  display: block;
+  padding: 5px 20px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.recovery{
+  display: inline-block;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  color: var(--black-color);
+  cursor: pointer;
+}
+
+.btn{
+  margin-left: .5rem;
+  transition: color .3s ease-out;
+  color: var(--blue-bg-color);
+}
+
+.btn:hover{
+color: var(--black-color);
+}
+
+/* @media screen and (max-width: 600px) {
+
+  body{
+    display: none;
+  }
+} */
