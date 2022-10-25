@@ -216,6 +216,10 @@ section .wrapper {
 }
 
 section .wrapper .wrapper-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex: 2;
 }
 
@@ -278,8 +282,7 @@ section .wrapper .wrapper-left {
 }
 
 #container .grid-item {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+ display: flex;
   gap: 1rem;
 }
 
@@ -354,14 +357,11 @@ section .wrapper .wrapper-left {
 }
 
 .container-card {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
-}
-
-.container-card .individual-cards{
-
 }
 
 .container-card .individual-cards img{
@@ -675,16 +675,281 @@ footer .footer-icons .custom-select select option{
  
  /* Media Queries for mobile responsive view Starts here*/
 
-
  @media screen and (max-width: 800px){
+  .nav-bar ul 
+  header .logo img {
+    width: 150px;
+    height: auto;
+  padding: 0 25px;
+  }
 
+  .sub-herosection p {
+    font-size: .7rem;
+     margin-bottom: 1rem;
+  }
+  
+  .sub-herosection-text1 {
+    font-size: .7rem;
+    margin-top: 1.5rem;
+  }
+  
+  .sub-herosection h1 {
+    font-size: 1.5rem; 
+  }
+  
+  .sub-herosection h1 .span {
+    display: block;
+    margin-top: .7rem;
+  }
+  .wrapper-buttons .secondary-btn{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 2rem auto;
+  }
+  section .wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  #container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 5rem 2rem;
+  }
+  
+  #container .grid-item {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 0 auto;
+    gap: 1rem;
+  }
+  
+  #container .grid-item .individual-item1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    text-align: left;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  #container .grid-item .individual-item1 .grid-item-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--black-color);
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  #container .grid-item .individual-item1 .grid-item-para {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--blue-bg-color);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #container .grid-item .individual-item1 .grid-item-phrase {
+    font-size: 0.8rem;
+    color: var(--black-color);
+    text-transform: capitalize;
+    line-height: 0.9rem;
+    margin-top: 0.6rem;
+    font-family: "p";
+  }
+  
+  #container .grid-item .grid-item-caption {
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--black-color);
+    margin-top: 0.7rem;
+    font-weight: bold;
+  }
+  
+  /* images fixed height and width */
+  #container .grid-item img {
+    border-radius: 1rem;
+    height: 200px;
+  }
+  
+  #card .container-card img {
+    border-radius: 1rem;
+    height: 200px;
+    width: 400px;
+  }
+  
+  /* images fixed height and width ends here */
+  #card {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  #card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+  }
+  
+  .container-card {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin-bottom: 2rem auto;
+  }
+ 
+  .container-card .individual-cards {
+    place-content: center;
+  }
+ 
+  .container-card .individual-cards img{
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .container-card .individual-cards:hover {
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+  
+  .container-card .individual-cards:hover {
+    box-shadow: 10px 7px 72px 1px rgba(0, 0, 0, 0.35);
+    transform: scale(1.03);
+  }
+  .category-head-text {
+    font-size: 1.2rem !important;
+  }
+  
+  #category .category-head-text1 {
+    font-size: 1.2rem !important;
+    margin-bottom: 2rem;
+  }
+  
+  #category .category-wrapper {
+    margin: 2rem auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-footer .footer-wrapper {
-  width: 800px;
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  #category .category-wrapper .icon-left,
+  .icon-right{
+    display: none;
 }
+  
+  #category .category-wrapper .category-item-text {
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+  }
+  section#category{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .category-head-text{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .category-head-text{
+    font-size: 1.2rem;
+
+  }
+  
+  #category .pricing-wrapper {
+    grid-template-columns: 1fr;
+    
+  }
+  
+  #category .individual-pricing:nth-of-type(4) {
+   margin-bottom: 2rem;
+  }
+  #category .individual-pricing {
+   height: 300px;
+  }
+  
+  #category .individual-pricing:hover {
+        transform: scaleY(1.05);
+    transform: skewX(1.05);
+  }
+
+  footer .footer-category .footer-category-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  footer .footer-wrapper {
+    justify-content: center;
+    margin-top: 1rem;
+    max-width: 800px;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  
+  .footer-wrapper .footer-logo img {
+    width: 130px;
+    height: auto;
+  }
+  
+  .footer-wrapper .footer-logo img {
+    width: 180px;
+  }
+  
+  .footer-wrapper .footer-logo .logo-description {
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    margin-top: 3px;
+    color: var(--blue-bg-color);
+    text-align: center;
+  }
+  
+  .footer-wrapper .footer-logo .copywrite {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .footer-wrapper .footer-company .company-text {
+    margin-top: 1rem ;
+
+    margin-bottom: -20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .footer-wrapper .footer-company li {
+    margin-bottom: 0.4rem;
+  }
+
+  .nav-bar ul li:nth-child(1){
+    display: none;
+  }
+  .nav-bar ul li:nth-child(2){
+    display: none;
+  }
+  .nav-bar ul li:nth-child(3){
+    display: none;
+  }
+  .nav-bar ul li:nth-child(4){
+    display: none;
+  }
+  .nav-bar ul li:nth-child(5){
+    display: none;
+  }
+  .nav-bar ul li:nth-child(6){
+    display: none;
+  }
+ 
  }
 
